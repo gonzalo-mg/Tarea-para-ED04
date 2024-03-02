@@ -1,7 +1,10 @@
 package cuentas;
 
 public class Main {
-
+/**
+ * main de ejecucion
+ * @param args n/a
+ */
     public static void main(String[] args) {
         CCuenta cuenta1;
         double saldoActual;
@@ -10,7 +13,12 @@ public class Main {
         
         operativa_cuenta(cuenta1);
     }
-
+/**
+ * metodo para simular operaciones bancarias
+ * 
+ * @param cuenta1 objeto instancia de CCuenta
+ * @see CCuenta
+ */
     public static void operativa_cuenta(CCuenta cuenta1) {
         double saldoActual;
         saldoActual = cuenta1.estado();

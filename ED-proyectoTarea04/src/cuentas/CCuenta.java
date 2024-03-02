@@ -31,10 +31,10 @@ public class CCuenta {
      * @since 2/3/2024
      * @version 1
      *
-     * @param nom
-     * @param cue
-     * @param sal
-     * @param tipo
+     * @param nom nombre del titular
+     * @param cue id de la cuenta
+     * @param sal cantidad euros actual
+     * @param tipo tipo a aplicar
      */
     public CCuenta(String nom, String cue, double sal, double tipo) {
         nombre = nom;
@@ -61,9 +61,8 @@ public class CCuenta {
      * @since 2/3/2024
      * @version 1
      *
-     * @param cantidad
-     * @exception si se ingresa cantidad negativa
-     * @return nuevo saldo
+     * @param cantidad euros
+     * @throws java.lang.Exception si se ingresa cantidad negativa
      */
     public void ingresar(double cantidad) throws Exception {
         if (cantidad < 0) {
@@ -78,7 +77,7 @@ public class CCuenta {
      * @author enunciado
      * @since 2/3/2024
      * @version 1
-     * @param cantidad
+     * @param cantidad euros
      * @throws java.lang.Exception si se retira cantidad negativa o una cantidad mayor al saldo
      * actual
      */
@@ -110,7 +109,7 @@ public class CCuenta {
      * @author gonzalo
      * @since 2/3/2024
      * @version 2
-     * @param nombre
+     * @param nombre titular
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -134,7 +133,7 @@ public class CCuenta {
      * @author gonzalo
      * @since 2/3/2024
      * @version 2
-     * @param cuenta
+     * @param cuenta id
      */
     public void setCuenta(String cuenta) {
         this.cuenta = cuenta;
@@ -158,7 +157,7 @@ public class CCuenta {
      * @author gonzalo
      * @since 2/3/2024
      * @version 2
-     * @param saldo
+     * @param saldo euros
      */
     public void setSaldo(double saldo) {
         this.saldo = saldo;
@@ -182,7 +181,7 @@ public class CCuenta {
      * @author gonzalo
      * @since 2/3/2024
      * @version 2
-     * @param tipoInterés
+     * @param tipoInterés tipo a aplicar
      */
     public void setTipoInterés(double tipoInterés) {
         this.tipoInterés = tipoInterés;
