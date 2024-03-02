@@ -8,10 +8,22 @@ package cuentas;
  * @version 1
  */
 public class CCuenta {
-
+/**
+ * nombre del titular
+ */
     private String nombre;
+    /**
+ * id de la cuenta (IBAn\SWIFT)
+ */
     private String cuenta;
+    /**
+ * cantidad disponible en EUROS
+ */
     private double saldo;
+    /**
+ * tipo de interés aplicado
+ * 
+ */
     private double tipoInterés;
 
     /**
