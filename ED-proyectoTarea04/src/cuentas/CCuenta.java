@@ -78,11 +78,9 @@ public class CCuenta {
      * @author enunciado
      * @since 2/3/2024
      * @version 1
-     *
      * @param cantidad
-     * @exception si se retira cantidad negativa o una cantidad mayor al saldo
+     * @throws java.lang.Exception si se retira cantidad negativa o una cantidad mayor al saldo
      * actual
-     * @return nuevo saldo
      */
     public void retirar(double cantidad) throws Exception {
         if (cantidad <= 0) {
